@@ -137,6 +137,8 @@ function Home() {
         </div>
       </section>
 
+      <StatsBand />
+
       <section className="bg-surface">
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-10 lg:py-28">
           <Reveal className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
