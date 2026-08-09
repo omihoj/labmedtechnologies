@@ -3,6 +3,7 @@ import { Award, Boxes, HeartHandshake, ArrowRight } from "lucide-react";
 import { Hero } from "@/components/site/Hero";
 import { CategoryGrid } from "@/components/site/CategoryGrid";
 import { CtaBand } from "@/components/site/CtaBand";
+import { StatsBand } from "@/components/site/StatsBand";
 import { Reveal } from "@/components/site/Reveal";
 import { images, contact } from "@/lib/site";
 
