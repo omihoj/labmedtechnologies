@@ -144,6 +144,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <ScrollProgress />
       <Header />
       <main>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
@@ -151,6 +152,7 @@ function RootComponent() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <BackToTop />
     </QueryClientProvider>
   );
 }
