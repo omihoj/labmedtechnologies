@@ -15,7 +15,7 @@ export function Footer() {
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-foreground/70">
             Quality consumables, equipment and scientific services across South Africa and
-            surrounding African countries. Level 1 Certified B-BBEE.
+            surrounding African countries. Level 4 Certified B-BBEE.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export function Footer() {
       <div className="border-t border-ink-foreground/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-xs text-ink-foreground/50 sm:flex-row sm:items-center sm:justify-between lg:px-10">
           <p>© {new Date().getFullYear()} Labmed Technologies. All rights reserved.</p>
-          <p>Level 1 Certified B-BBEE Company</p>
+          <p>Level 4 Certified B-BBEE Company</p>
         </div>
       </div>
     </footer>
