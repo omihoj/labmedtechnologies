@@ -100,10 +100,10 @@ function Home() {
             </h2>
             <div className="mt-8 inline-flex items-center gap-3 border border-border px-4 py-3">
               <span className="grid size-8 place-items-center bg-accent font-display text-xs font-bold text-accent-foreground">
-                1
+                4
               </span>
               <span className="text-sm text-muted-foreground">
-                Level 1 Certified B-BBEE company
+                Level 4 Certified B-BBEE company
               </span>
             </div>
           </Reveal>
