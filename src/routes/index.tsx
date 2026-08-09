@@ -3,6 +3,7 @@ import { Award, Boxes, HeartHandshake, ArrowRight } from "lucide-react";
 import { Hero } from "@/components/site/Hero";
 import { CategoryGrid } from "@/components/site/CategoryGrid";
 import { CtaBand } from "@/components/site/CtaBand";
+import { StatsBand } from "@/components/site/StatsBand";
 import { Reveal } from "@/components/site/Reveal";
 import { images, contact } from "@/lib/site";
 
@@ -100,10 +101,10 @@ function Home() {
             </h2>
             <div className="mt-8 inline-flex items-center gap-3 border border-border px-4 py-3">
               <span className="grid size-8 place-items-center bg-accent font-display text-xs font-bold text-accent-foreground">
-                1
+                4
               </span>
               <span className="text-sm text-muted-foreground">
-                Level 1 Certified B-BBEE company
+                Level 4 Certified B-BBEE company
               </span>
             </div>
           </Reveal>
@@ -136,6 +137,8 @@ function Home() {
           </Reveal>
         </div>
       </section>
+
+      <StatsBand />
 
       <section className="bg-surface">
         <div className="mx-auto max-w-7xl px-5 py-20 lg:px-10 lg:py-28">
