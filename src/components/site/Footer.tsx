@@ -1,18 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MessageCircle, MapPin, Clock } from "lucide-react";
 import { contact, categories } from "@/lib/site";
+import { Logo } from "@/components/site/Logo";
 
 export function Footer() {
   return (
     <footer className="bg-ink text-ink-foreground">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-12 lg:px-10 lg:py-24">
         <div className="lg:col-span-4">
-          <div className="flex items-center gap-3">
-            <span className="grid size-9 place-items-center rounded-sm bg-accent font-display text-sm font-bold text-accent-foreground">
-              L
-            </span>
-            <span className="font-display text-lg font-bold">LABMED TECHNOLOGIES</span>
-          </div>
+          <Logo markClassName="size-11" wordClassName="text-[0.95rem] font-semibold" />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-foreground/70">
             Quality consumables, equipment and scientific services across South Africa and
             surrounding African countries. Level 1 B-BBEE.

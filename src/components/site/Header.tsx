@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { contact } from "@/lib/site";
+import { Logo } from "@/components/site/Logo";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -44,26 +45,14 @@ export function Header() {
           to="/"
           onClick={() => setOpen(false)}
           className={cn(
-            "group flex items-center gap-3 py-4 transition-colors",
+            "group flex items-center py-3 transition-colors",
             scrolled || open ? "text-foreground" : "text-ink-foreground",
           )}
         >
-          <span className="grid size-9 place-items-center rounded-sm bg-accent text-accent-foreground font-display text-sm font-bold">
-            L
-          </span>
-          <span className="leading-none">
-            <span className="block font-display text-base font-bold tracking-tight">
-              LABMED
-            </span>
-            <span
-              className={cn(
-                "eyebrow block text-[0.55rem] opacity-70",
-                scrolled || open ? "text-muted-foreground" : "text-ink-foreground",
-              )}
-            >
-              Technologies
-            </span>
-          </span>
+          <Logo
+            markClassName="size-11"
+            wordClassName="text-[0.8rem] sm:text-[0.95rem] font-semibold"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
