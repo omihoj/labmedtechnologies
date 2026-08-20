@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-ink text-ink-foreground">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-12 lg:px-10 lg:py-24">
         <div className="lg:col-span-4">
-          <Logo markClassName="size-11" wordClassName="text-[0.95rem] font-semibold" />
+          <Logo variant="light" markClassName="size-12" wordClassName="text-[0.95rem] font-semibold" />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-foreground/70">
             Quality consumables, equipment and scientific services across South Africa and
             surrounding African countries. Level 1 B-BBEE.

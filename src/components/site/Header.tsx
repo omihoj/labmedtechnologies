@@ -50,7 +50,8 @@ export function Header() {
           )}
         >
           <Logo
-            markClassName="size-11"
+            variant={scrolled || open ? "dark" : "light"}
+            markClassName="size-12"
             wordClassName="text-[0.8rem] sm:text-[0.95rem] font-semibold"
           />
         </Link>
