@@ -25,13 +25,13 @@ export const images = {
 };
 
 export const contact = {
-  phone: "+27 12 004 2837",
-  phoneDisplay: "012 004 2837",
-  phoneHref: "tel:+27120042837",
-  cell: "+27 64 946 6549",
-  cellDisplay: "064 946 6549",
-  cellHref: "tel:+27649466549",
-  whatsapp: "https://wa.me/27649466549",
+  phone: "+27 64 936 6549",
+  phoneDisplay: "064 936 6549",
+  phoneHref: "tel:+27649366549",
+  cell: "+27 64 936 6549",
+  cellDisplay: "064 936 6549",
+  cellHref: "tel:+27649366549",
+  whatsapp: "https://wa.me/27649366549",
   email: "info@labmedtechnologies.co.za",
   address: ["583 Heatherview", "Akasia", "Pretoria", "0182"],
   hours: "Monday – Friday, 8:00 – 16:30",
@@ -174,7 +174,7 @@ export const testingServices = [
 
 export const consultingServices = [
   "Laboratory start-up cost analysis and designing of the lab",
-  "Compilation of quality manual, standard operating procedures and supporting documents in accordance with ISO 17025",
+  "Compilation of quality manual, standard operating procedures and supporting documents",
   "Maintenance of existing laboratory management systems",
   "Root-cause analysis, corrective and preventive actions on non-conforming products",
   "Method development and validation",

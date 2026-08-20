@@ -79,7 +79,7 @@ const services = [
   },
   {
     title: "Consulting",
-    body: "ISO/IEC 17025 expertise to build, document and maintain a sound laboratory management system.",
+    body: "Expertise to build, document and maintain a sound laboratory management system.",
   },
   {
     title: "Technical Services",
@@ -101,11 +101,9 @@ function Home() {
             </h2>
             <div className="mt-8 inline-flex items-center gap-3 border border-border px-4 py-3">
               <span className="grid size-8 place-items-center bg-accent font-display text-xs font-bold text-accent-foreground">
-                4
+                1
               </span>
-              <span className="text-sm text-muted-foreground">
-                Level 4 Certified B-BBEE company
-              </span>
+              <span className="text-sm text-muted-foreground">Level 1 B-BBEE company</span>
             </div>
           </Reveal>
 
