@@ -3,8 +3,8 @@ import { Reveal } from "@/components/site/Reveal";
 const stats = [
   { value: "7", label: "Product ranges" },
   { value: "9", label: "Testing disciplines" },
-  { value: "ISO 17025", label: "Consulting expertise" },
-  { value: "Level 4", label: "Certified B-BBEE" },
+  { value: "3", label: "Service divisions" },
+  { value: "Level 1", label: "B-BBEE contributor" },
 ];
 
 export function StatsBand() {

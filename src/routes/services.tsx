@@ -17,7 +17,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Laboratory testing, ISO/IEC 17025 consulting and technical service from Labmed Technologies — water, soils, concrete, microbiology and elemental analysis.",
+          "Laboratory testing, quality-systems consulting and technical service from Labmed Technologies — water, soils, concrete, microbiology and elemental analysis.",
       },
       {
         property: "og:title",
@@ -49,7 +49,7 @@ function Services() {
       <PageHero
         eyebrow="Services"
         title="Analysis, systems and support — from one team."
-        body="Testing, ISO/IEC 17025 consulting and technical service designed around how your laboratory actually works."
+        body="Testing, quality-systems consulting and technical service designed around how your laboratory actually works."
         image={images.labAlt}
       />
 
@@ -93,7 +93,7 @@ function Services() {
               <ClipboardCheck className="size-8 text-accent" strokeWidth={1.25} />
               <p className="eyebrow mt-8 text-accent">02 — Consulting</p>
               <h2 className="mt-4 text-balance font-display text-3xl font-bold leading-tight sm:text-4xl">
-                ISO/IEC 17025 expertise, end to end.
+                Laboratory systems expertise, end to end.
               </h2>
               <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
                 Labmed Technologies is your ideal partner to guide your organisation in its journey

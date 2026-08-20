@@ -81,7 +81,7 @@ function About() {
               support, we work to make sure the tools in your facility perform exactly as they
               should — and keep performing.
             </p>
-            <p className="text-foreground">Labmed Technologies is a Level 4 Certified B-BBEE company.</p>
+            <p className="text-foreground">Labmed Technologies is a Level 1 B-BBEE company.</p>
           </Reveal>
         </div>
       </section>
