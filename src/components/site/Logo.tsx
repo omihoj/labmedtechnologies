@@ -23,19 +23,19 @@ type Capsule = {
 /** Microscope silhouette described as overlapping capsules (viewBox 0 0 100 100). */
 const parts: Capsule[] = [
   // eyepiece (sparse, fading tip)
-  { x1: 63, y1: 8, x2: 60, y2: 22, w: 7, n: 16, minR: 1.2, maxR: 2.6 },
+  { x1: 66, y1: 8, x2: 62, y2: 22, w: 6, n: 14, minR: 1.1, maxR: 2.2 },
   // body tube, angled down-left
-  { x1: 61, y1: 20, x2: 47, y2: 50, w: 12, n: 54, minR: 1.6, maxR: 3.4 },
-  // arm / focus knob mass
-  { x1: 52, y1: 44, x2: 66, y2: 62, w: 13, n: 40, minR: 1.6, maxR: 3.2 },
+  { x1: 63, y1: 20, x2: 48, y2: 52, w: 9, n: 48, minR: 1.5, maxR: 3.0 },
+  // arm sweeping to the pillar
+  { x1: 52, y1: 46, x2: 66, y2: 66, w: 10, n: 34, minR: 1.5, maxR: 3.0 },
   // stage
-  { x1: 30, y1: 63, x2: 70, y2: 63, w: 8, n: 42, minR: 1.4, maxR: 3.0 },
+  { x1: 26, y1: 64, x2: 74, y2: 64, w: 6, n: 52, minR: 1.4, maxR: 2.8 },
   // side arm extending left (sparse tip)
-  { x1: 44, y1: 56, x2: 24, y2: 57, w: 5, n: 16, minR: 1.0, maxR: 2.2 },
+  { x1: 46, y1: 54, x2: 22, y2: 55, w: 4.5, n: 18, minR: 0.9, maxR: 2.0 },
   // pillar
-  { x1: 52, y1: 66, x2: 52, y2: 80, w: 10, n: 24, minR: 1.5, maxR: 3.0 },
+  { x1: 60, y1: 66, x2: 58, y2: 82, w: 8, n: 26, minR: 1.4, maxR: 2.8 },
   // base
-  { x1: 26, y1: 85, x2: 76, y2: 85, w: 11, n: 54, minR: 1.6, maxR: 3.6 },
+  { x1: 22, y1: 87, x2: 78, y2: 87, w: 10, n: 70, minR: 1.5, maxR: 3.4 },
 ];
 
 const NAVY = "#1B3A4B";
