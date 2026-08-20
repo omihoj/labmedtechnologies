@@ -40,6 +40,7 @@ const parts: Capsule[] = [
 
 const NAVY = "#1B3A4B";
 const MINT = "#5EEAA0";
+const LIGHT = "#CFE3E8";
 
 const dots = (() => {
   const rng = makeRng(20260820);
@@ -66,11 +67,24 @@ const dots = (() => {
   return out;
 })();
 
-export function LogoMark({ className }: { className?: string }) {
+export function LogoMark({
+  className,
+  variant = "dark",
+}: {
+  className?: string;
+  variant?: "dark" | "light";
+}) {
   return (
     <svg viewBox="0 0 100 100" role="img" aria-label="Labmed Technologies" className={className}>
       {dots.map((d, i) => (
-        <circle key={i} cx={d.cx} cy={d.cy} r={d.r} fill={d.fill} opacity={d.o} />
+        <circle
+          key={i}
+          cx={d.cx}
+          cy={d.cy}
+          r={d.r}
+          fill={d.fill === NAVY && variant === "light" ? LIGHT : d.fill}
+          opacity={d.o}
+        />
       ))}
     </svg>
   );
@@ -80,14 +94,16 @@ export function Logo({
   className,
   wordClassName,
   markClassName,
+  variant = "dark",
 }: {
   className?: string;
   wordClassName?: string;
   markClassName?: string;
+  variant?: "dark" | "light";
 }) {
   return (
     <span className={cn("flex items-center gap-3", className)}>
-      <LogoMark className={cn("size-10 shrink-0", markClassName)} />
+      <LogoMark variant={variant} className={cn("size-10 shrink-0", markClassName)} />
       <span
         className={cn(
           "font-serif text-[0.95rem] leading-none tracking-[0.18em] uppercase",
