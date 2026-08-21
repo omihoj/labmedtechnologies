@@ -20,7 +20,7 @@ export function Logo({
     <img
       src={variant === "light" ? logoLight.url : logoDark.url}
       alt="Labmed Technologies"
-      className={cn("h-10 w-auto object-contain sm:h-12", className)}
+      className={cn("h-20 w-auto object-contain sm:h-24", className)}
     />
   );
 }
