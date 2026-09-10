@@ -68,9 +68,14 @@ export function Footer() {
             </li>
             <li className="flex gap-3">
               <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
-              <a href={contact.phoneHref} className="hover:text-ink-foreground">
-                {contact.phone}
-              </a>
+              <span className="flex flex-col gap-1">
+                <a href={contact.telHref} className="hover:text-ink-foreground">
+                  {contact.telDisplay}
+                </a>
+                <a href={contact.phoneHref} className="hover:text-ink-foreground">
+                  {contact.phoneDisplay}
+                </a>
+              </span>
             </li>
             <li className="flex gap-3">
               <MessageCircle className="mt-0.5 size-4 shrink-0 text-accent" />

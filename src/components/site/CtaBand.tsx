@@ -5,7 +5,7 @@ import { contact } from "@/lib/site";
 
 export function CtaBand() {
   return (
-    <section className="gradient-ink text-ink-foreground">
+    <section className="noise gradient-ink text-ink-foreground">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-20 lg:grid-cols-12 lg:items-end lg:px-10 lg:py-28">
         <Reveal className="lg:col-span-7">
           <p className="eyebrow text-accent">Let's work together</p>
@@ -20,16 +20,22 @@ export function CtaBand() {
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3.5 text-sm font-medium text-accent-foreground transition-all duration-300 hover:brightness-110"
+              className="sheen group inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3.5 text-sm font-medium text-accent-foreground transition-all duration-300 hover:brightness-110"
             >
               Contact Us
               <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
+              href={contact.telHref}
+              className="inline-flex items-center gap-2 rounded-sm border border-ink-foreground/25 px-6 py-3.5 text-sm font-medium transition-colors duration-300 hover:bg-ink-foreground/10"
+            >
+              {contact.telDisplay}
+            </a>
+            <a
               href={contact.phoneHref}
               className="inline-flex items-center gap-2 rounded-sm border border-ink-foreground/25 px-6 py-3.5 text-sm font-medium transition-colors duration-300 hover:bg-ink-foreground/10"
             >
-              {contact.phone}
+              {contact.phoneDisplay}
             </a>
           </div>
         </Reveal>
