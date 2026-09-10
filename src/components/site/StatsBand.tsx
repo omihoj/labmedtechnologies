@@ -1,26 +1,32 @@
 import { Reveal } from "@/components/site/Reveal";
+import { Counter } from "@/components/site/Counter";
 
 const stats = [
-  { value: "7", label: "Product ranges" },
-  { value: "9", label: "Testing disciplines" },
-  { value: "3", label: "Service divisions" },
-  { value: "Level 1", label: "B-BBEE contributor" },
+  { value: 7, label: "Product ranges" },
+  { value: 9, label: "Testing disciplines" },
+  { value: 3, label: "Service divisions" },
 ];
 
 export function StatsBand() {
   return (
-    <section className="gradient-ink text-ink-foreground">
+    <section className="noise gradient-ink text-ink-foreground">
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-white/10 px-0 lg:grid-cols-4">
         {stats.map((s, i) => (
           <Reveal key={s.label} delay={i * 90} className="gradient-ink">
             <div className="px-6 py-12 lg:px-10">
               <p className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                {s.value}
+                <Counter value={s.value} />
               </p>
               <p className="eyebrow mt-3 text-ink-foreground/65">{s.label}</p>
             </div>
           </Reveal>
         ))}
+        <Reveal delay={270} className="gradient-ink">
+          <div className="px-6 py-12 lg:px-10">
+            <p className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Level 1</p>
+            <p className="eyebrow mt-3 text-ink-foreground/65">B-BBEE contributor</p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

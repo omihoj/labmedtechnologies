@@ -63,7 +63,7 @@ export function Header() {
               to={item.to}
               activeOptions={{ exact: item.to === "/" }}
               className={cn(
-                "relative py-6 text-sm font-medium transition-colors",
+                "link-underline relative py-6 text-sm font-medium transition-colors",
                 scrolled
                   ? "text-muted-foreground hover:text-foreground"
                   : "text-ink-foreground/75 hover:text-ink-foreground",
@@ -76,8 +76,20 @@ export function Header() {
             </Link>
           ))}
           <a
+            href={contact.telHref}
+            className={cn(
+              "hidden items-center gap-2 text-sm font-medium transition-colors xl:inline-flex",
+              scrolled
+                ? "text-muted-foreground hover:text-foreground"
+                : "text-ink-foreground/75 hover:text-ink-foreground",
+            )}
+          >
+            <Phone className="size-4" />
+            {contact.telDisplay}
+          </a>
+          <a
             href={contact.phoneHref}
-            className="inline-flex items-center gap-2 rounded-sm bg-accent px-4 py-2.5 text-sm font-medium text-accent-foreground transition-all duration-300 hover:brightness-110 hover:shadow-lift"
+            className="sheen inline-flex items-center gap-2 rounded-sm bg-accent px-4 py-2.5 text-sm font-medium text-accent-foreground transition-all duration-300 hover:brightness-110 hover:shadow-lift"
           >
             <Phone className="size-4" />
             {contact.phoneDisplay}
@@ -120,6 +132,12 @@ export function Header() {
             className="mt-5 inline-flex items-center justify-center gap-2 rounded-sm bg-accent px-4 py-3 text-sm font-medium text-accent-foreground"
           >
             <Phone className="size-4" /> {contact.phoneDisplay}
+          </a>
+          <a
+            href={contact.telHref}
+            className="mt-3 inline-flex items-center justify-center gap-2 rounded-sm border border-border px-4 py-3 text-sm font-medium text-foreground"
+          >
+            <Phone className="size-4 text-accent" /> {contact.telDisplay}
           </a>
         </nav>
       </div>
