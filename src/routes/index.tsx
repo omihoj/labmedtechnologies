@@ -5,6 +5,8 @@ import { CategoryGrid } from "@/components/site/CategoryGrid";
 import { CtaBand } from "@/components/site/CtaBand";
 import { StatsBand } from "@/components/site/StatsBand";
 import { Reveal } from "@/components/site/Reveal";
+import { TrustMarquee } from "@/components/site/TrustMarquee";
+import { QuoteBand } from "@/components/site/QuoteBand";
 import { images, contact } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
@@ -37,7 +39,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "Labmed Technologies",
-          telephone: contact.phone,
+          telephone: [contact.tel, contact.phone],
           email: contact.email,
           address: {
             "@type": "PostalAddress",
@@ -91,6 +93,9 @@ function Home() {
   return (
     <>
       <Hero />
+
+      <TrustMarquee />
+
 
       <section className="border-b border-border bg-background">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 lg:grid-cols-12 lg:px-10 lg:py-28">
@@ -215,6 +220,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <QuoteBand />
 
       <CtaBand />
     </>

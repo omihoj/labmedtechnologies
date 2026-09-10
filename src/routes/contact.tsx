@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Labmed Technologies in Akasia, Pretoria. Call or WhatsApp 064 936 6549 or send us an enquiry for laboratory, medical and agricultural supplies.",
+          "Contact Labmed Technologies in Akasia, Pretoria. Call 012 004 2837, WhatsApp 064 936 6549 or send an enquiry for laboratory, medical and agricultural supplies.",
       },
       { property: "og:title", content: "Contact Us | Labmed Technologies Pretoria" },
       {
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/contact")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "Labmed Technologies",
-          telephone: contact.phone,
+          telephone: [contact.tel, contact.phone],
           email: contact.email,
           address: {
             "@type": "PostalAddress",
