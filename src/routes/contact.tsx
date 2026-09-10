@@ -3,6 +3,8 @@ import { useState, type FormEvent } from "react";
 import { Mail, Phone, MessageCircle, MapPin, Clock, Send, Check } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { CopyLine } from "@/components/site/CopyLine";
+import { Faq } from "@/components/site/Faq";
 import { contact, categories, images } from "@/lib/site";
 
 type ContactSearch = { category?: string };
@@ -99,7 +101,13 @@ function Contact() {
                 <Phone className="mt-0.5 size-5 shrink-0 text-accent" strokeWidth={1.5} />
                 <span>
                   <span className="eyebrow block text-muted-foreground">Telephone</span>
-                  <a href={contact.phoneHref} className="mt-1 block text-sm hover:text-accent">
+                  <a href={contact.telHref} className="mt-1 block text-sm hover:text-accent">
+                    {contact.telDisplay}
+                  </a>
+                  <span className="mt-1 block">
+                    <CopyLine value={contact.telDisplay} label="Copy number" />
+                  </span>
+                  <a href={contact.phoneHref} className="mt-2 block text-sm hover:text-accent">
                     {contact.phoneDisplay}
                   </a>
                 </span>
