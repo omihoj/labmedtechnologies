@@ -51,7 +51,7 @@ export function Header() {
         >
           <Logo
             variant={scrolled || open ? "dark" : "light"}
-            className="max-h-16 max-w-[25rem] object-left sm:max-h-18 lg:w-[17rem]"
+            className="h-[4.5rem] max-w-[25rem] object-fill object-left sm:h-20 lg:h-[4.5rem] lg:w-[17rem]"
           />
         </Link>
 
